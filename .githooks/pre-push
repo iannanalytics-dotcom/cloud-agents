@@ -1,0 +1,5 @@
+#!/bin/sh
+# Second net before GitHub: scans every commit about to be pushed, including any made with --no-verify.
+PY=$(command -v python || command -v python3 || command -v py)
+[ -n "$PY" ] || { echo "repo check: Python not found, so the push is blocked"; exit 1; }
+exec "$PY" tools/repo_check.py push

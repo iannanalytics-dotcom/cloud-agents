@@ -1,0 +1,17 @@
+{
+ "note": "The shape of the claude-lock.json that `ant apply` writes here, with the ids left empty. In your own private copy commit the real file with every deploy (it records what is running); this public copy ignores it.",
+ "version": 1,
+ "origin": {
+  "base_url": "https://api.anthropic.com",
+  "organization_id": "",
+  "workspace_id": ""
+ },
+ "resources": {
+  "./agents/blog-editor/agent.md": {"kind": "agent", "id": "", "version": "", "hash": "", "remote_hash": ""},
+  "./agents/blog-writer/agent.md": {"kind": "agent", "id": "", "version": "", "hash": "", "remote_hash": ""},
+  "./agents/blog-writer/deployment-review.yaml": {"kind": "deployment", "id": "", "hash": "", "remote_hash": ""},
+  "./agents/blog-writer/environment.yaml": {"kind": "environment", "id": "", "hash": "", "remote_hash": ""},
+  "./agents/blog-writer/skills/blog-kit": {"kind": "skill", "id": "", "version": "", "hash": ""},
+  "./agents/blog-writer/vault.yaml": {"kind": "vault", "id": "", "hash": "", "remote_hash": ""}
+ }
+}

@@ -1,0 +1,9 @@
+# The cloud container the blog agent (and its editor) works in, on Anthropic's infrastructure.
+# Networking is unrestricted on purpose: every post is researched and fact-checked across the open web (government,
+# regulator and vendor help sites that change from post to post), and check_links.py opens every link it cites.
+# The one secret the agent uses (BLOG_INTAKE_KEY, in the vault) is limited separately to the n8n host, header only.
+name: blog-agent-env
+config:
+  type: cloud
+  networking:
+    type: unrestricted

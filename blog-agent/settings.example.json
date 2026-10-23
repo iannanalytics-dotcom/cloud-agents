@@ -1,0 +1,6 @@
+{
+  "note": "Copy to local/settings.json (git ignores local/) and fill it in. It holds the intake key, so it never goes in git. tools/deploy.py reads it.",
+  "n8n_host": "YOUR-N8N-HOST",
+  "intake_secret": "<the intake key: the same value the n8n intake checks in the x-blog-agent-key header>",
+  "ant_profile": "default"
+}

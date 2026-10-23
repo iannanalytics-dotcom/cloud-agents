@@ -1,0 +1,26 @@
+# The owner's real meetings. This deployment stays PAUSED for good: n8n (the run monitor, docs/n8n-door.md) looks for
+# work at 6:00 and 17:00 and starts a run of this deployment only when a brief (a meeting within 2 days) or a thank-you
+# (Held + Meeting Notes) is due. Each run writes the thank-yous waiting and up to 4 briefs. Recipients live in n8n,
+# never in the agent: briefs go to the owner, thank-you drafts to the mailbox the owner sends from, and the operator
+# gets a copy of both.
+name: Meeting agent (live)
+agent: ./agent.md
+environment_id: ./environment.yaml
+vault_ids:
+  - YOUR_VAULT_ID   # deploy.py writes in the vault id from claude-lock.json
+schedule:
+  type: cron
+  expression: "0 9 1 1 *"   # never relied on: the deployment stays paused and n8n starts the runs
+  timezone: Australia/Perth
+budget:
+  type: limit
+  max_list_cost: {amount: "200", currency: USD}   # hard cap of US$2 per run
+initial_events:
+  - type: user.message
+    content:
+      - type: text
+        text: |
+          Live run, started because work is due. Sheet: live.
+          Follow your run book (the brief-kit skill) from step 0: read the work list, write the thank-yous waiting, then
+          the briefs (at most 4, earliest meeting first), hand each one in with deliver.py, and finish by handing in the
+          run report with report.py (also when there is nothing to do).

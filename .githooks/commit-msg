@@ -1,0 +1,5 @@
+#!/bin/sh
+# Blocks a commit message that breaks the convention in CONTRIBUTING.md or holds private data (tools/repo_check.py).
+PY=$(command -v python || command -v python3 || command -v py)
+[ -n "$PY" ] || { echo "repo check: Python not found, so the commit is blocked"; exit 1; }
+exec "$PY" tools/repo_check.py message "$1"

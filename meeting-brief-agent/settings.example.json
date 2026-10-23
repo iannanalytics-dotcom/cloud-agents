@@ -1,0 +1,11 @@
+{
+  "note": "Copy to local/settings.json (git ignores local/) and fill it in. It holds keys, so it never goes in git. tools/deploy.py reads it.",
+  "n8n_host": "YOUR-N8N-HOST",
+  "door_secret": "<the door key: the same value the n8n door checks in the x-brief-agent-key header>",
+  "admin_header": "x-brief-admin-key",
+  "admin_secret": "<the admin key for the demo tools and the run monitor; never given to the agent>",
+  "demo_path": "meeting-brief-demo",
+  "monitor_path": "meeting-brief-monitor",
+  "dispatch_path": "meeting-brief-dispatch",
+  "ant_profile": "meeting-agent"
+}

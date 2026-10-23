@@ -1,0 +1,9 @@
+# The cloud container the meeting-brief agent works in, on Anthropic's infrastructure.
+# Networking is unrestricted on purpose: each brief is researched on that lead's own business website and their
+# networking group's pages, which differ for every lead. The one secret the agent uses (BRIEF_DOOR_KEY, in the vault)
+# is limited separately to the n8n host, header only.
+name: meeting-brief-agent-env
+config:
+  type: cloud
+  networking:
+    type: unrestricted

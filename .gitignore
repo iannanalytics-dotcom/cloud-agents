@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.pyc
+# Local test output
+tests/ws*/
+work.json
+!**/examples/work.json
+out/
+# Your own deploy state and settings. In a private copy that deploys, commit claude-lock.json (it records what is
+# running); this public copy keeps every real resource id out.
+claude-lock.json
+claude-lock.*.json
+!claude-lock.example.json
+local/
+tools/repo_check.local
+# Never commit secrets or private settings. Keys live in Anthropic's vault, in n8n and in a settings folder outside
+# every repo (SECURITY.md). tools/repo_check.py checks content as well.
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+*secret*
+*credential*.json
+*service-account*.json
+gsheets_key*
+private_terms*.txt
+# Editor and system files
+.vscode/
+*.log
+Thumbs.db
+desktop.ini
+.DS_Store

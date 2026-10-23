@@ -1,0 +1,15 @@
+{
+  "note": "Where the blog agent delivers posts. Not secret: the intake also needs the key, which lives only in the Anthropic vault (env var BLOG_INTAKE_KEY, sent as a header to the n8n host only). Replace YOUR-N8N-HOST with your n8n host and give each path a random suffix (docs/n8n-door.md).",
+  "intake_url": "https://YOUR-N8N-HOST/webhook/blog-agent-intake",
+  "context_url": "https://YOUR-N8N-HOST/webhook/blog-agent-context",
+  "header": "x-blog-agent-key",
+  "key_env": "BLOG_INTAKE_KEY",
+  "n8n_host": "YOUR-N8N-HOST",
+  "timezone": "Australia/Perth",
+  "lead_days": {
+    "publish": 3,
+    "draft": 2,
+    "review": 2
+  },
+  "notify": "The operator gets an email from n8n for every delivery or hold."
+}

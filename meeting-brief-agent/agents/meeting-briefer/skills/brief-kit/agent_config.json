@@ -1,0 +1,14 @@
+{
+  "note": "Where the meeting-brief agent reads its work, hands in results and hands in its run report. Not secret: the door also needs the key, which lives only in the Anthropic vault (env var BRIEF_DOOR_KEY, sent as a header to the n8n host only). Replace YOUR-N8N-HOST with your n8n host and give each path a random suffix (docs/n8n-door.md).",
+  "context_url": "https://YOUR-N8N-HOST/webhook/meeting-brief-context",
+  "deliver_url": "https://YOUR-N8N-HOST/webhook/meeting-brief-deliver",
+  "report_url": "https://YOUR-N8N-HOST/webhook/meeting-brief-report",
+  "header": "x-brief-agent-key",
+  "key_env": "BRIEF_DOOR_KEY",
+  "n8n_host": "YOUR-N8N-HOST",
+  "timezone": "Australia/Perth",
+  "max_briefs_per_run": 4,
+  "rules": {"brief_min": 200, "brief_max": 2500, "questions": 5, "question_min": 15, "question_max": 300, "sources_max": 12,
+            "not_confirmed_max": 8, "subject_max": 120, "thank_you_min": 150, "thank_you_max": 1200,
+            "intro_stem": "introduc"}
+}

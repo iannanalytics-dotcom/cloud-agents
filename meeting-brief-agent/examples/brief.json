@@ -1,0 +1,14 @@
+{
+ "kind": "brief",
+ "lead_id": "DEMO-001",
+ "brief": "Priya Nair, director (from her email signature), Northgate Bookkeeping, Fremantle. Port City group.\nNorthgate is a two-person bookkeeping practice for trades and hospitality businesses: BAS, payroll and Xero setup. Its website says it opened in 2024.\nShe told us she joined the group in July, prefers a morning coffee near Fremantle station, and is keen to meet people who work with cafes.\nFit: referrals both ways. Her cafe clients may struggle with rosters and supplier invoices (a guess), and your clients often need a bookkeeper. You sort out the systems, she keeps the books.\nYour notes: find out how she brings a new client on board; tell her about the cafe owners' breakfast in November.\nPractical: she said she is new to 1-2-1s, so a short agenda will help.",
+ "questions": [
+  "What made you choose trades and hospitality as Northgate's focus?",
+  "What does a great referral look like for you, and what would an owner say that tells me to introduce them?",
+  "How are you finding the Port City group since July, and which connections have helped most so far?",
+  "When a new client comes on board, how do you get them from a box of receipts to clean books, and where does that time go?",
+  "Which of your cafe or trades clients are drowning in rosters and invoices, or who else in your network would enjoy meeting me, and would you be happy to introduce us?"
+ ],
+ "sources": ["northgate.example.com (home, about)", "Port City group member page", "her emails of 3 and 6 Oct", "the owner's prep notes (sheet)"],
+ "not_confirmed": ["her title (email signature only)"]
+}

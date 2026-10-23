@@ -1,0 +1,37 @@
+{
+ "note": "MADE UP. What get_work.py saves to /workspace/work.json on a demo run: one thank-you due (DEMO-002) and one brief due (DEMO-001). No real person or business.",
+ "ok": true,
+ "sheet": "demo",
+ "today": "2026-10-20",
+ "now_local": "2026-10-20 06:00",
+ "window_days": 2,
+ "window_until": "2026-10-22",
+ "thank_yous": [
+  {
+   "lead_id": "DEMO-002",
+   "full_name": "Sam Carter",
+   "business": "Carter Plumbing",
+   "meeting_date": "2026-10-19",
+   "conversation": "10 Oct, Sam: Happy to meet for a coffee next week, mornings suit me best.\n16 Oct, Calendar: Mon 19 Oct, 8:00am at the station cafe.",
+   "brief": "Sam Carter, owner, Carter Plumbing, Fremantle. Port City group.",
+   "meeting_notes": "Coffee at the station cafe. Sam has a new apprentice starting in November and wants more strata and property manager work. Promised to introduce Sam to a property manager I know this week. Catch up again in a month."
+  }
+ ],
+ "briefs": [
+  {
+   "lead_id": "DEMO-001",
+   "full_name": "Priya Nair",
+   "business": "Northgate Bookkeeping",
+   "role": "",
+   "group": "Port City",
+   "meeting_date": "2026-10-22",
+   "email_domain": "northgate.example.com",
+   "freemail": false,
+   "website": "https://northgate.example.com",
+   "conversation": "3 Oct, Priya: Thanks for reaching out. I joined in July and I'm keen to meet people who work with cafes.\n6 Oct, Priya: A morning coffee near Fremantle station works well for me.",
+   "prep_notes": "ask how she onboards new clients. tell her about our cafe owners breakfast in nov",
+   "meeting_notes": ""
+  }
+ ],
+ "booked_later": []
+}

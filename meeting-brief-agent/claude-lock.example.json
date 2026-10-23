@@ -1,0 +1,17 @@
+{
+ "note": "The shape of the claude-lock.json that `ant apply` writes here, with the ids left empty. In your own private copy commit the real file with every deploy (it records what is running); this public copy ignores it.",
+ "version": 1,
+ "origin": {
+  "base_url": "https://api.anthropic.com",
+  "organization_id": "",
+  "workspace_id": ""
+ },
+ "resources": {
+  "./agents/meeting-briefer/agent.md": {"kind": "agent", "id": "", "version": "", "hash": "", "remote_hash": ""},
+  "./agents/meeting-briefer/deployment-demo.yaml": {"kind": "deployment", "id": "", "hash": "", "remote_hash": ""},
+  "./agents/meeting-briefer/deployment-live.yaml": {"kind": "deployment", "id": "", "hash": "", "remote_hash": ""},
+  "./agents/meeting-briefer/environment.yaml": {"kind": "environment", "id": "", "hash": "", "remote_hash": ""},
+  "./agents/meeting-briefer/skills/brief-kit": {"kind": "skill", "id": "", "version": "", "hash": ""},
+  "./agents/meeting-briefer/vault.yaml": {"kind": "vault", "id": "", "hash": "", "remote_hash": ""}
+ }
+}

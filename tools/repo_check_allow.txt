@@ -1,0 +1,3 @@
+# Email addresses and phone numbers that may appear in this repo (tools/repo_check.py allows them; everything else is
+# blocked). Only public business contacts belong here, never a lead's or a private person's details.
+# (none: examples use someone@example.com)

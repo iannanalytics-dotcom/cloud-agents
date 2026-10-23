@@ -1,0 +1,23 @@
+# The DEMO sheet: two made-up rows (DEMO-001 needs a brief, DEMO-002 needs a thank-you), for showing the agent without
+# a real person's details on screen. Manual runs only: this deployment stays PAUSED for good (manual runs still work
+# while paused). Start one with `python tools/deploy.py run --demo --watch`, which resets the demo sheet first.
+name: Meeting agent (demo sheet)
+agent: ./agent.md
+environment_id: ./environment.yaml
+vault_ids:
+  - YOUR_VAULT_ID   # deploy.py writes in the vault id from claude-lock.json
+schedule:
+  type: cron
+  expression: "0 9 1 1 *"   # never relied on: the deployment stays paused
+  timezone: Australia/Perth
+budget:
+  type: limit
+  max_list_cost: {amount: "200", currency: USD}   # hard cap of US$2 per run
+initial_events:
+  - type: user.message
+    content:
+      - type: text
+        text: |
+          Demo run. Sheet: demo.
+          Follow your run book (the brief-kit skill) from step 0: read the work list, write the thank-you waiting, then
+          the brief, hand each one in with deliver.py, and finish by handing in the run report with report.py.

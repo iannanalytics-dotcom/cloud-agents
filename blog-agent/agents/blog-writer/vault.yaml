@@ -1,0 +1,4 @@
+# The vault is only the container. Its one credential (BLOG_INTAKE_KEY, an environment_variable credential limited
+# to your n8n host, header only) is added with `python tools/deploy.py credential`, never written here.
+type: vault
+display_name: blog-agent
